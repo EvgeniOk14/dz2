@@ -1,7 +1,14 @@
+import java.io.IOException;
+
 public class firstAssemblerFile 
 {
     public static void firstAssembling()
  { 
-functionsFile.sortingFunction(functionsFile.printArray(functionsFile.fillArray(functionsFile.scanNumber())));
+try {
+    functionsFile.sortingFunction(functionsFile.printArray(functionsFile.fillArray(functionsFile.scanNumber())));
+} catch (IOException e) {
+    // TODO Auto-generated catch block
+    e.printStackTrace();
+}
  }    
 }
